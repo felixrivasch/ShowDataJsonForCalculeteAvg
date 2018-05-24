@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cálculo de notas - Felix Rivas</title>
+	<meta content="text/html" charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/estudiantesJSON.js"></script>
+	<img src="images/myWorld.jpg">
+</head>
+<body>
+	<!--Sección para mostrar los objetos-->
+	<div id="contenedorEstudiantes">
+		<p>ESTUDIANTES</p>
+		<hr>
+		<table id="table1">
+			<thead id="thead1">
+				<tr id="campos">
+					<td>Código</td>
+					<td>Nombre</td>
+					<td>Nota</td>
+				</tr>
+			</thead>
+			<tbody id="tbody1">
+				<tr id="estudiante0" onmouseover="cambiarColor(estudiante0)" onmouseout="regresarColor(estudiante0)">
+					<td id="codigo0"></td>
+					<td id="nombre0"></td>
+					<td id="nota0"></td>
+				</tr>
+				<tr id="estudiante1" onmouseover="cambiarColor(estudiante1)" onmouseout="regresarColor(estudiante1)">
+					<td id="codigo1"></td>
+					<td id="nombre1"></td>
+					<td id="nota1"></td>
+				</tr>
+				<tr id="estudiante2" onmouseover="cambiarColor(estudiante2)" onmouseout="regresarColor(estudiante2)">
+					<td id="codigo2"></td>
+					<td id="nombre2"></td>
+					<td id="nota2"></td>
+				</tr>
+				<tr id="estudiante3" onmouseover="cambiarColor(estudiante3)" onmouseout="regresarColor(estudiante3)">
+					<td id="codigo3"></td>
+					<td id="nombre3"></td>
+					<td id="nota3"></td>
+				</tr>
+				<tr id="estudiante4" onmouseover="cambiarColor(estudiante4)" onmouseout="regresarColor(estudiante4)">
+					<td id="codigo4"></td>
+					<td id="nombre4"></td>
+					<td id="nota4"></td>
+				</tr>
+				<tr id="estudiante5" onmouseover="cambiarColor(estudiante5)" onmouseout="regresarColor(estudiante5)">
+					<td id="codigo5"></td>
+					<td id="nombre5"></td>
+					<td id="nota5"></td>
+				</tr>
+				<tr id="estudiante6" onmouseover="cambiarColor(estudiante6)" onmouseout="regresarColor(estudiante6)">
+					<td id="codigo6"></td>
+					<td id="nombre6"></td>
+					<td id="nota6"></td>
+				</tr>
+				<tr id="estudiante7" onmouseover="cambiarColor(estudiante7)" onmouseout="regresarColor(estudiante7)">
+					<td id="codigo7"></td>
+					<td id="nombre7"></td>
+					<td id="nota7"></td>
+				</tr>
+				<tr id="estudiante8" onmouseover="cambiarColor(estudiante8)" onmouseout="regresarColor(estudiante8)">
+					<td id="codigo8"></td>
+					<td id="nombre8"></td>
+					<td id="nota8"></td>
+				</tr>
+				<tr id="estudiante9" onmouseover="cambiarColor(estudiante9)" onmouseout="regresarColor(estudiante9)">
+					<td id="codigo9"></td>
+					<td id="nombre9"></td>
+					<td id="nota9"></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>	
+
+	<!--Sección para mostrar el promedio-->
+	<div id="contenedorPromedio">
+		<p>PROMEDIO</p>
+		<hr>
+		<table id="table2">
+			<tbody id="tbody2"> 
+				<tr id="filaPromedio" onmouseover="cambiarColor(filaPromedio)" onmouseout="regresarColor(filaPromedio)">
+					<td><p id="promedio"></p></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<!--Sección para mostrar los el estudiante con mayor nota-->
+	<div id="contenedorMayorNota">
+		<p>ESTUDIANTE CON MAYOR NOTA</p>
+		<hr>
+		<table id="table3">
+			<thead id="thead3">
+				<tr id="campos2">
+					<td>Código</td>
+					<td>Nombre</td>
+					<td>Nota</td>
+				</tr>
+			</thead>
+			<tbody id="tbody3">
+				<tr id="estudianteMayorNota" onmouseover="cambiarColor(estudianteMayorNota)" onmouseout="regresarColor(estudianteMayorNota)">
+					<td id="codigoMayorNota"></td>
+					<td id="nombreMayorNota"></td>
+					<td id="mayorNota"></td>
+				</tr>
+			</tbody>
+				
+		</table>
+	</div>
+
+	<!--Sección para mostrar los el estudiante con menor nota-->
+	<div id="contenedorMenorNota">
+		<p>ESTUDIANTE CON MENOR NOTA</p>
+		<hr>
+		<table id="table4">
+			<thead id="thead4">
+				<tr id="campos3">
+					<td>Código</td>
+					<td>Nombre</td>
+					<td>Nota</td>
+				</tr>
+			</thead>
+			<tbody id="tbody4">
+				<tr id="estudianteMenorNota" onmouseover="cambiarColor(estudianteMenorNota)" onmouseout="regresarColor(estudianteMenorNota)">
+					<td id="codigoMenorNota"></td>
+					<td id="nombreMenorNota"></td>
+					<td id="menorNota"></td>
+				</tr>
+			</tbody>
+				
+		</table>
+	</div>
+
+	<!--Sección para mostrar los botone de acciones-->
+	<div id="contenedorBotonesAccion">
+		<p>ACCIONES</p>
+		<hr>
+		<p>
+			<button id="mostrarEstudiantes" onclick="mostrarEstudiantes()" onmouseover="mostrarComentario('mostrarEstudiantes')" onmouseout="ocultarComentario('comentario1')">Mostrar estudiantes
+			</button>
+		</p>
+		<p>
+			<button id="calcularPromedio" onclick="calularPromedio()" onmouseover="mostrarComentario('calcularPromedio')" onmouseout="ocultarComentario('comentario2')">Calular promedio
+			</button>
+		</p>
+		<p>
+			<button id="mostarMayorNota" onclick="mostrarMayorNota()" onmouseover="mostrarComentario('mostarMayorNota')" onmouseout="ocultarComentario('comentario3')">Mostrar mayor nota
+			</button>
+		</p>
+		<p>
+			<button id="mostarMenorNota" onclick="mostrarMenorNota()" onmouseover="mostrarComentario('mostarMenorNota')" onmouseout="ocultarComentario('comentario4')">Mostrar menor nota
+			</button>
+		</p>
+		<p>
+			<button id="limpiar" onclick="limpiar()" onmouseover="mostrarComentario('limpiar')" onmouseout="ocultarComentario('comentario5')" onmousedown="alerta()">Limpiar
+			</button>
+		</p>
+	</div>
+
+	<!--Sección para mostrar los comentarios los botones-->
+	<div id="contenedorComentariosNoVisible">
+		<table id="table6">
+			<tbody>
+				<tr>
+					<td><h1 id="comentario1"></h1></td>
+				</tr>
+				<tr>
+					<td><h1 id="comentario2"></h1></td>
+				</tr>
+				<tr>
+					<td><h1 id="comentario3"></h1></td>
+				</tr>
+				<tr>
+					<td><h1 id="comentario4"></h1></td>
+				</tr>
+				<tr>
+					<td><h1 id="comentario5"></h1></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<label>
+		<img id="imagen" src="images/myWorld.jpg">
+	</label>
+	<label>
+		Felix Rivas Chamorro - Todos los derechos reservados @ Copyright 2017
+	</label>
+</body>
+</html>

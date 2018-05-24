@@ -1,0 +1,203 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color: #CEF6F5;
+}
+
+div#contenedorEstudiantes{
+	background: #34495e;
+	position: absolute;
+	top: 2%;
+	left: 35%;
+	width: 45%;
+	height: 50%;
+	padding: 0px 10px 10px 10px;
+}
+
+div#contenedorPromedio{
+
+	background: #34495e;
+	position: absolute;
+	top: 55.5%;
+	left: 20%;
+	width: 12.5%;
+	height: 37.5%;
+	padding: 0px 10px 10px 10px;	
+}
+
+div#contenedorMayorNota{
+	background: #34495e;
+	position: absolute;
+	top: 55.5%;
+	left: 35%;
+	width: 45%;
+	height: 17%;
+	padding: 0px 10px 10px 10px;	
+}
+
+div#contenedorMenorNota{
+	background: #34495e;
+	position: absolute;
+	top: 76%;
+	left: 35%;
+	width: 45%;
+	height: 17%;
+	padding: 0px 10px 10px 10px;	
+}
+
+div#contenedorBotonesAccion{
+	background: #34495e;
+	position: absolute;
+	top: 2%;
+	left: 20%;
+	width: 12.5%;
+	height: 50%;
+	padding: 0px 10px 10px 10px;
+}
+
+div#contenedorComentariosNoVisible{
+	/*background: #CEF6F5;*/
+	background-color: rgba(255, 255, 255, .150);
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	width: 12.5%;
+	height: 50%;
+	padding: 10px 10px 10px 10px;
+
+}
+
+table#table1{
+	background-color: #FFFFFF;
+	font-family: arial;
+	left: 0%;
+	width: 100%;
+	height: 77%;
+	border-collapse: collapse;	
+}
+
+table#table2{
+	background-color: #FFFFFF;
+	font-family: arial;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 65%;
+
+}
+
+table#table3{
+	background-color: #FFFFFF;
+	font-family: arial;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 40%;
+	border-collapse: collapse;
+}
+
+table#table4{
+	background-color: #FFFFFF;
+	font-family: arial;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 40%;
+	border-collapse: collapse;
+}
+
+table#table6{
+	position: absolute;
+	font-family: arial;
+	font-style: italic;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	border-collapse: collapse;
+	padding: 0px 10px 10px 10px;
+}
+
+thead{
+	background-color: #34495e;
+	font-size: 85%;
+}
+
+
+tbody#tbody1{
+	color: #000000;
+	font-size: 70%;	
+
+}
+
+tbody#tbody2{
+	color: #000000;
+	font-size: 120%;	
+
+}
+
+tbody#tbody3{
+	color: #000000;
+	font-size: 75%;	
+
+}
+
+tbody#tbody4{
+	color: #000000;
+	font-size: 70%;	
+
+}
+
+tr#campos{
+	color: #FFFFFF;
+}
+
+tr#campos2{
+	color: #FFFFFF;
+}
+
+tr#campos3{
+	color: #FFFFFF;
+}
+
+tr#filaPromedio{
+	color: #000000;
+}
+
+td{
+	text-align: center;
+}
+
+p{
+	color: #FFFFFF;
+	text-align: center;
+	font-family: arial;
+
+}
+
+p#promedio{
+	color: #000000;
+}
+
+h1{
+	color: #000000;
+	font-size: 90%;
+	font-family: arial;
+	
+}
+
+button{
+	top: 5%;
+	left: 10%;
+	width: 100%;
+	height: 25px;
+	font-size: 70%;
+}
+
+img{
+	width: 100%;
+}
+
+img#imagen{
+	width: 10%;
+}
